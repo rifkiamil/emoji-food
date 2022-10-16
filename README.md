@@ -1,41 +1,34 @@
-# emoji-food
-emoji food front end 
+Sample Python
+-------------
 
+Setup Local Python Environment:
 
-## Using venv to isolate dependencies
-1. Use the venv command to create a virtual copy of the entire Python installation. This tutorial creates a virtual copy in a folder named env, but you can specify any name for the folder.
+(If the Python install fails, see: https://github.com/pyenv/pyenv/wiki/Common-build-problems)
 
-cd your-project
-python -m venv env
-Using venv to isolate dependencies
+```
+git clone https://github.com/pyenv/pyenv.git .pyenv
+export PYENV_ROOT=.pyenv
+.pyenv/bin/pyenv install
+eval "$(.pyenv/bin/pyenv init --path)"
+python -m venv venv
+source venv/bin/activate
+pip install -U pip
+pip install -r requirements.txt
+```
 
-2. Set your shell to use the venv paths for Python by activating the virtual environment: 
-source env/bin/activate
+Run the server locally:
+```
+python main.py
+```
 
-3. Now you can install packages without affecting other projects or your global Python installation:
-pip install google-cloud-storage
+Check it out: http://localhost:8080
 
-4. Installing the Cloud Client Libraries for Python
-pip install --upgrade google-cloud-storage
+Run Locally with Buildpacks & Docker:
+```
+pack build --builder=gcr.io/buildpacks/builder sample-python
+docker run -it -ePORT=8080 -p8080:8080 sample-python
+```
 
-## 2. Install packages for Python
-2.1. source env/bin/activate
+Run on Cloud Run:
 
-2.2. To install Flask, run the following command:
-pip install flask
-
-2.3 Once the installation is complete, run the following command to confirm the installation:
-python -c "import flask; print(flask.__version__)"
-
-
-
-
-export FLASK_APP=hello
-
-export FLASK_ENV=development
-
-flask run
-
-## Naming 
-
-https://www.conventionalcommits.org/en/v1.0.0/ 
+[![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run)
