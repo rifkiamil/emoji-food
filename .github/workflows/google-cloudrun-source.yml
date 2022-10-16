@@ -53,7 +53,7 @@ on:
 env:
   PROJECT_ID: rifkiamil-ea-00-dev # TODO: update Google Cloud project id
   SERVICE: emoji-fe # TODO: update Cloud Run service name
-  REGION: europe=west4 # TODO: update Cloud Run service region
+  REGION: europe-west4 # TODO: update Cloud Run service region
 
 jobs:
   deploy:
