@@ -1,3 +1,6 @@
+
+Alway start with the following https://github.com/GoogleCloudPlatform/buildpack-samples/tree/master/sample-python
+
 Sample Python
 -------------
 
