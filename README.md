@@ -1,10 +1,8 @@
 
 ### Setup of IDE
 ```
-
-```
 https://cloud.google.com/python/docs/setup
-``````
+```
 
 ### Alway start with the following project to Git clone
 
