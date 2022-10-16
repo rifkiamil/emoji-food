@@ -4,6 +4,10 @@
 https://cloud.google.com/python/docs/setup
 ```
 
+Setup for python with flask 
+1. export FLASK_APP=main.py
+2. flask run
+
 ### Alway start with the following project to Git clone
 
 ```
