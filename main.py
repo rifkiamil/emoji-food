@@ -1,12 +1,11 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 
 @app.get("/")
 def index():
-    return "hello, world"
-
+    return render_template('index.html')
 
 if __name__ == "__main__":
     # Dev only: run "python main.py" and open http://localhost:8080
