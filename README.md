@@ -1,5 +1,16 @@
 
-Alway start with the following https://github.com/GoogleCloudPlatform/buildpack-samples/tree/master/sample-python
+### Setup of IDE
+```
+
+```
+https://cloud.google.com/python/docs/setup
+```
+
+### Alway start with the following project to Git clone
+
+```
+https://github.com/GoogleCloudPlatform/buildpack-samples/tree/master/sample-python
+```
 
 Sample Python
 -------------
