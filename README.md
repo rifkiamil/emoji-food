@@ -35,3 +35,7 @@ export FLASK_APP=hello
 export FLASK_ENV=development
 
 flask run
+
+## Naming 
+
+https://www.conventionalcommits.org/en/v1.0.0/ 
